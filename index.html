@@ -73,7 +73,7 @@
 				<option value="dimgrey">Dim Grey (I &#9829; JS shirt only)</option> 
 			  </select>
 			</div> 
-			<div class="tshirt">
+			<div class="tshirt is-hidden">
 				<label for="preview">Preview:</label>
 				<div id="color_details"></div>
 			</div>               
@@ -89,7 +89,7 @@
 			<label><input type="checkbox" name="node"> Node.js Workshop — Tuesday 1pm-4pm, $100</label>          
 			<label><input type="checkbox" name="build-tools"> Build tools Workshop — Wednesday 9am-12pm, $100</label>
 			<label><input type="checkbox" name="npm"> npm Workshop — Wednesday 1pm-4pm, $100</label>
-			<label class="price">Price: </label>			
+			<label class="price"></label>			
 		  </fieldset>
 		  
 		  <fieldset>
@@ -101,7 +101,7 @@
 			  <option value="bitcoin">Bitcoin</option>
 			</select>
 
-			<div id="credit-card" class="credit-card is-hidden payment_option">
+			<div id="credit-card" class="credit-card payment_option">
 
 			  <div class="col-6 col">
 				<label for="cc-num" id="cc-nume">Card Number:</label>
@@ -143,11 +143,11 @@
 			  </select> 	                  	         
 			</div>
 
-			<div id="paypal" class="is-hidden payment_option">
+			<div id="paypal" class="payment_option">
 				<p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information, when you click “Register” below.</p>
 			</div> 
 
-			<div id="bitcoin" class="is-hidden payment_option">
+			<div id="bitcoin" class="payment_option">
 				<p>If you selected the Bitcoin option we'll take you to the Coinbase site to set up your billing information. Due to the nature of exchanging Bitcoin, all Bitcoin transactions will be final.</p>
 			</div>                  
 
@@ -160,7 +160,6 @@
 		<p class="log"></p>
 	
 		<script src="js/jquery-3.1.1.min.js"></script>
-		<script src="js/jquery.sticky.js"></script>
 		<script src="js/jquery.creditCardValidator.js"></script>		
 		<script src="js/app.js"></script>
 	</div>
